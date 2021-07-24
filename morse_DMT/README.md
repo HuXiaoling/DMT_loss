@@ -1,4 +1,4 @@
-Step 1 - generate dipha file
+### Step 1 - generate dipha file
 
 write_dipha_file_3d.py
 takes path to image stack, output complex filename, and output vert filename
@@ -6,7 +6,7 @@ an example command:
 python write_dipha_file_3d_revise.py data_2d/ inputs/complex.bin inputs/vert.txt
 
 
-Step 2 - run dipha
+### Step 2 - run dipha
 
 %% You only need to run cmake & make once
 
@@ -33,7 +33,7 @@ dipha/inputs/new_stp_2/diagram.bin will be where diagram gets outputted - you wi
 dipha/inputs/new_stp_2/dipha.edges will be where edge file gets outputted -- you will need this file
 1137 855 270 are the dimensions
 
-Step 3 - convert dipha output from binary
+### Step 3 - convert dipha output from binary
 load_persistence_diagram.m
 takes two arguments
 first - dipha.edges file generated in step 2
@@ -41,7 +41,7 @@ second - path to output file that is a .txt version of the input file.  our mors
 
 an example command: load_persistence_diagram('inputs/dipha.edges','inputs/dipha_edges.txt')
 
-Step 4 - run discrete morse graph reconstruction
+### Step 4 - run discrete morse graph reconstruction
 src folder
 to build, enter the following command
 
@@ -59,7 +59,7 @@ an example command:
 src/a.out inputs/vert.txt inputs/dipha_edges.txt 0 output/
 
 
-All you need to do is to run the 'main.py' file!
+### All you need to do is to run the 'main.py' file!
 
 You need to change the size of the data to adapt your owm data:
 1) main.py: subprocess.call(["mpiexec", "-n", "4", "dipha-graph-recon/build/dipha", "inputs/complex.bin", "inputs/diagram.bin", "inputs/dipha.edges", "1024", "1024", "10"])

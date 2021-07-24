@@ -1,0 +1,1 @@
+/usr/bin/c++    -O3 -DNDEBUG   -pthread -rdynamic CMakeFiles/dipha.dir/src/dipha.cpp.o  -o dipha -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so 

@@ -1,4 +1,4 @@
-## This folder contains three subfolders:
+## This folder contains two subfolders:
 
 1. morse_DMT: this folder contains the implementation for real discrete morse theory and captures the real morse structure. 
 

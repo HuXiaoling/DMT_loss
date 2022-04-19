@@ -162,7 +162,7 @@ def PH_watershed(img_ori, verbose = False, test = False):
 					# _v_value is younger cc (smallest value in younger cc)
 					# img[_v] is f(v)
 					_update_cc_pd(_coord_younger_cc=_v, _younger_value=_v_value, _coord_older_cc=_edge, _older_value=_u_value, img=img, img_cc=img_cc, img_cc_birth=img_cc_birth, img_shape=img_shape)
-				if (_u_value >= _v_value) & (t - _u_value <= Th): # u is younger, , update all u cc to v
+				elif (_u_value > _v_value) & (t - _u_value <= Th): # u is younger, , update all u cc to v
 					# _u_value is youngerr cc (smallest value in younger cc)
 					# img[edge[0]] is f(u)
 					_update_cc_pd(_coord_younger_cc=_edge, _younger_value=_u_value, _coord_older_cc=_v, _older_value=_v_value, img=img, img_cc=img_cc, img_cc_birth=img_cc_birth, img_shape=img_shape)

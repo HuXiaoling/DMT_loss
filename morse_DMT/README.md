@@ -6,26 +6,26 @@ write_dipha_file_3d.py
 
 an example command:
 
---- python write_dipha_file_3d_revise.py data_2d/ inputs/complex.bin inputs/vert.txt
+> python write_dipha_file_3d_revise.py data_2d/ inputs/complex.bin inputs/vert.txt
 
 
 ### Step 2 - run dipha
 
 %% You only need to run cmake & make once
 
-(dipha-graph-recon folder
+* (dipha-graph-recon folder)
 
 run the following commands in this folder to build dipha
 
-rm -rf build/ (this removes my build directory)
+> rm -rf build/ (this removes my build directory)
 
-mkdir build
+> mkdir build
 
-cd build
+> cd build
 
-cmake ..
+> cmake ..
 
-make)
+> make
 
 now that dipha is built, you can run
 

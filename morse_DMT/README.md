@@ -33,7 +33,7 @@ you need the number of processes you will use, path to complex file, path to dia
 
 an example command:
 
-mpiexec -n 4 dipha-graph-recon/build/dipha inputs/complex.bin inputs/diagram.bin inputs/dipha.edges 1137 855 270
+> mpiexec -n 4 dipha-graph-recon/build/dipha inputs/complex.bin inputs/diagram.bin inputs/dipha.edges 1137 855 270
 
 If you do not need distributed computing, leave off the mpiexec -n 32 portion of the command
 
@@ -41,37 +41,35 @@ In the above example:
 
 32 represents the number of processes used, change this to be appropriate for you machine
 
-dipha/inputs/new_stp_2/complex.bin the input file generated in step 1!
+> dipha/inputs/new_stp_2/complex.bin the input file generated in step 1!
 
-dipha/inputs/new_stp_2/diagram.bin will be where diagram gets outputted - you will not need this file
+> dipha/inputs/new_stp_2/diagram.bin will be where diagram gets outputted - you will not need this file
 
-dipha/inputs/new_stp_2/dipha.edges will be where edge file gets outputted -- you will need this file
+> dipha/inputs/new_stp_2/dipha.edges will be where edge file gets outputted -- you will need this file
 
-1137 855 270 are the dimensions
+> 1137 855 270 are the dimensions
 
 ### Step 3 - convert dipha output from binary
 
-load_persistence_diagram.m
+* load_persistence_diagram.m
 
 takes two arguments
 
-first - dipha.edges file generated in step 2
+* first - dipha.edges file generated in step 2
 
-second - path to output file that is a .txt version of the input file.  our morse framework takes this as input
+* second - path to output file that is a .txt version of the input file.  our morse framework takes this as input
 
 an example command: 
 
-load_persistence_diagram('inputs/dipha.edges','inputs/dipha_edges.txt')
+> load_persistence_diagram('inputs/dipha.edges','inputs/dipha_edges.txt')
 
 ### Step 4 - run discrete morse graph reconstruction
 
-src folder
-
-to build, enter the following command
+> src folder to build, enter the following command
 
 %% You only need to compile once
 
-(g++ ComputeGraphReconstruction.cpp)
+> g++ ComputeGraphReconstruction.cpp
 
 4 inputs:
 
@@ -85,7 +83,7 @@ fourth is the output folder, which will output a vert file and a edge file - thi
 
 an example command:
 
-src/a.out inputs/vert.txt inputs/dipha_edges.txt 0 output/
+> src/a.out inputs/vert.txt inputs/dipha_edges.txt 0 output/
 
 ### All you need to do is to run the 'main.py' file!
 

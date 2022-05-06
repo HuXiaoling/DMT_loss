@@ -2,11 +2,11 @@
 
 write_dipha_file_3d.py
 
-takes path to image stack, output complex filename, and output vert filename
+> takes path to image stack, output complex filename, and output vert filename
 
 an example command:
 
-> python write_dipha_file_3d_revise.py data_2d/ inputs/complex.bin inputs/vert.txt
+--- python write_dipha_file_3d_revise.py data_2d/ inputs/complex.bin inputs/vert.txt
 
 
 ### Step 2 - run dipha

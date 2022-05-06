@@ -2,7 +2,7 @@
 
 write_dipha_file_3d.py
 
-> takes path to image stack, output complex filename, and output vert filename
+* takes path to image stack, output complex filename, and output vert filename
 
 an example command:
 

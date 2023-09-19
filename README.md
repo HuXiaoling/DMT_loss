@@ -22,7 +22,7 @@ Please consider citing our paper if you find it useful.
   year={2019}
 }
 
-@inproceedings{hu2020topology,
+@inproceedings{hu2021topology,
   title={Topology-Aware Segmentation Using Discrete Morse Theory},
   author={Hu, Xiaoling and Wang, Yusu and Fuxin, Li and Samaras, Dimitris and Chen, Chao},
   booktitle={International Conference on Learning Representations},

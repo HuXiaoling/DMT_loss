@@ -12,7 +12,7 @@ It works for 2D and 3D vessel data.
 It works for 2D and 3D volume data.
 
 ## Citation
-Please consider citing our paper if you find it useful.
+Please consider citing our papers if you find them useful.
 ```
 @article{hu2019topology,
   title={Topology-preserving deep image segmentation},
